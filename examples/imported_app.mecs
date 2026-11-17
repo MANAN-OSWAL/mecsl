@@ -1,0 +1,4 @@
+# imported_app.mecs — imports both common and app
+
+import "common.mecs";
+import "app.mecs";

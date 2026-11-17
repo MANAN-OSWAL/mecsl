@@ -1,0 +1,5 @@
+# invalid_undefined_reference.mecs — demonstrates E203 error
+
+[application] {
+    host = database.missingHost;
+}

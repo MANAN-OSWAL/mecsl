@@ -1,0 +1,22 @@
+# app.mecs — main application configuration
+
+import "common.mecs";
+
+macro SET_SERVER(hostValue, portValue) {
+    server.host = hostValue;
+    server.port = portValue;
+}
+
+[application] {
+    name = "College Portal";
+    environment = env("APP_ENV", "development");
+    maxUsers = 500;
+    defaultHost = server_defaults.host;
+}
+
+SET_SERVER("localhost", 8080);
+
+script start {
+    print "Starting College Portal";
+    run "college-portal";
+}

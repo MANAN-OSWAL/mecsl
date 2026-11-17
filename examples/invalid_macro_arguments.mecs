@@ -1,0 +1,7 @@
+# invalid_macro_arguments.mecs — demonstrates E302 error
+
+macro SET_PORT(portValue) {
+    server.port = portValue;
+}
+
+SET_PORT(8080, 9090);

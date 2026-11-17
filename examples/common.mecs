@@ -1,0 +1,11 @@
+# common.mecs — shared defaults imported by app.mecs
+
+[logging] {
+    enabled = true;
+    level = "info";
+}
+
+[server_defaults] {
+    host = "localhost";
+    port = 8080;
+}
